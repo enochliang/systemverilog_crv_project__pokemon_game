@@ -1,4 +1,4 @@
-# CRV Lab09 — PSG (Pokemon Strategy Game)
+# CRV Lab — PSG (Pokemon Strategy Game)
 
 > **NYCU ICLAB 2021 Fall — Lab09, Lab10**
 > 以 SystemVerilog 實作的寶可夢策略遊戲 RTL 設計，並搭配功能覆蓋率驗證（Functional Coverage）與斷言驗證（Assertion-Based Verification）。
