@@ -62,18 +62,8 @@ project/
 
 ## System Architecture & Module Descriptions
 
-```
-┌──────────────┐       Custom Channel              		┌──────────────┐     AXI4-Lite      	┌───────────────┐
-│   PATTERN    │ ──── (id/act/item valid) ────────▶	│   pokemon    │ ◀─────────────────▶	│    bridge     │ ◀──▶ pseudo_DRAM
-│  (Stimulus)  │ ◀─── (out_valid / info) ──────── 		│    (DUT)     │   	C_in_valid       	│               │
-└──────────────┘                                   		└──────────────┘   	C_r_wb           	└───────────────┘
-                                                 		        	│       C_addr
-																	▼       C_data_w/r
-                                                  		┌──────────────┐
-                                                  		│   CHECKER    │
-                                                  		│(Coverage/SVA)│
-                                                  		└──────────────┘
-```
+![system architecture](99_IMAGES/module_hier(light).drawio.png)
+![system architecture](99_IMAGES/module_hier(dark).drawio.png)
 
 | Module | Description |
 |--------|-------------|
