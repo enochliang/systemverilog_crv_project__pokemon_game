@@ -12,21 +12,20 @@ import usertype::*;
 
 covergroup Spec1 @(negedge clk && inf.out_valid);
        coverpoint inf.out_info[31:28] {
-              option.at_least = 20 ;
-              bins stage0 = { 'd0 } ;
-		bins stage1 = { 'd1 } ;
-		bins stage2 = { 'd2 } ;
-		bins stage3 = { 'd4 } ;
+            option.at_least = 20 ;
+            bins stage0 = { 'd0 } ;
+		    bins stage1 = { 'd1 } ;
+		    bins stage2 = { 'd2 } ;
+		    bins stage3 = { 'd4 } ;
        }
        coverpoint inf.out_info[27:24] {
-              option.at_least = 20 ;
-              bins type0 = { 'd0 } ;
-		bins type1 = { 'd1 } ;
-		bins type2 = { 'd2 } ;
-		bins type3 = { 'd4 } ;
-              bins type4 = { 'd8 } ;
+            option.at_least = 20 ;
+            bins type0 = { 'd0 } ;
+		    bins type1 = { 'd1 } ;
+		    bins type2 = { 'd2 } ;
+		    bins type3 = { 'd4 } ;
+            bins type4 = { 'd8 } ;
        }
-
 endgroup : Spec1
 
 covergroup Spec2 @(posedge clk && inf.id_valid);
