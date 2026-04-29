@@ -29,7 +29,7 @@
 Designed and verified a multi-module RTL system in **SystemVerilog**, demonstrating end-to-end digital design skills from microarchitecture to functional sign-off.
 
 - **RTL Design**: Implemented a finite state machine (FSM)-based main module (`pokemon`) and a separate AXI4-Lite bridge module (`bridge`), handling multi-cycle handshake protocols and external memory transactions.
-- **Bus Protocol**: Designed the `bridge` module to interface with a pseudo-DRAM via an **AXI4-Lite-like protocol**, covering read/write channel arbitration and valid/ready handshaking.
+- **Bus Protocol**: Designed the `bridge` module to interface with a pseudo-DRAM via an **AXI4-Lite protocol**, covering read/write channel arbitration and valid/ready handshaking.
 - **Constraint Random Verification (CRV)**: Built a self-checking testbench (`PATTERN`) using SystemVerilog randomization to generate **6,000 constrained-random test vectors**, covering both legal operations and error-injection scenarios.
 - **Functional Coverage**: Authored five cover groups in `CHECKER.sv` to track player ID distribution, action transition pairs, output completeness, and error message diversity — ensuring thorough stimulus coverage.
 - **Assertion-Based Verification (ABV)**: Wrote **SVA assertions** to formally capture and monitor protocol and output correctness throughout simulation, enabling automatic bug detection on waveform and simulation log.
