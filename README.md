@@ -62,8 +62,8 @@ project/
 
 ## System Architecture & Module Descriptions
 
-![system architecture](99_IMAGES/module_hier(light).drawio.png)
-![system architecture](99_IMAGES/module_hier(dark).drawio.png)
+![system architecture](99_IMAGES/module_hier-(light).drawio.png#gh-light-mode-only)
+![system architecture](99_IMAGES/module_hier-(dark).drawio.png#gh-dark-mode-only)
 
 | Module | Description |
 |--------|-------------|
