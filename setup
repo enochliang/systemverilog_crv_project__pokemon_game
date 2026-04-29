@@ -1,0 +1,3 @@
+source /usr/cadtool/user_setup/08-vcs.csh
+source /usr/cadtool/user_setup/08-verdi.csh
+
