@@ -17,7 +17,6 @@
 - [Environment Requirements](#environment-requirements)
 - [How to Use](#how-to-use)
   - [Compilation & Simulation](#compilation--simulation)
-  - [Waveform Viewing](#waveform-viewing)
   - [Cleaning Generated Files](#cleaning-generated-files)
 - [Coverage Specification](#coverage-specification)
 - [Notes](#notes)
@@ -213,20 +212,6 @@ The following files are generated after simulation:
 | `simv` | Compiled simulation executable |
 | `compile.log` | Compilation warnings and error log |
 | `dump.fsdb` | Verdi waveform file (full hierarchical dump) |
-
-### Waveform Viewing
-
-After simulation, open the waveform with Verdi:
-
-```bash
-verdi -ssf dump.fsdb &
-```
-
-Or use nWave:
-
-```bash
-nWave dump.fsdb &
-```
 
 The waveform includes all signals across the full testbench hierarchy (set by `$fsdbDumpvars(0, testbed)`) as well as SVA assertion Pass/Fail events.
 
